@@ -1,0 +1,1052 @@
+[
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "locale",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "locale",
+        "description": "locale",
+        "detail": "locale",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "compras.migrations.0001_initial",
+        "description": "compras.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('inventario', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Compra',\n            fields=[",
+        "detail": "compras.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "CompraAdmin",
+        "kind": 6,
+        "importPath": "compras.admin",
+        "description": "compras.admin",
+        "peekOfCode": "class CompraAdmin(admin.ModelAdmin):\n    list_display = ('producto', 'cliente', 'cantidad', 'fecha', 'total', 'creado_en')\nclass Compra_ProductoAdmin(admin.ModelAdmin):\n    list_display = ('compra_id', 'producto_id', 'cantidad', 'precio_unitario', 'creado_en')\nadmin.site.register(Compra, CompraAdmin)\nadmin.site.register(Compra_Producto, Compra_ProductoAdmin)",
+        "detail": "compras.admin",
+        "documentation": {}
+    },
+    {
+        "label": "Compra_ProductoAdmin",
+        "kind": 6,
+        "importPath": "compras.admin",
+        "description": "compras.admin",
+        "peekOfCode": "class Compra_ProductoAdmin(admin.ModelAdmin):\n    list_display = ('compra_id', 'producto_id', 'cantidad', 'precio_unitario', 'creado_en')\nadmin.site.register(Compra, CompraAdmin)\nadmin.site.register(Compra_Producto, Compra_ProductoAdmin)",
+        "detail": "compras.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ComprasConfig",
+        "kind": 6,
+        "importPath": "compras.apps",
+        "description": "compras.apps",
+        "peekOfCode": "class ComprasConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'compras'",
+        "detail": "compras.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Compra",
+        "kind": 6,
+        "importPath": "compras.models",
+        "description": "compras.models",
+        "peekOfCode": "class Compra(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='compras')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='compras')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        return self.producto.nombre",
+        "detail": "compras.models",
+        "documentation": {}
+    },
+    {
+        "label": "Compra_Producto",
+        "kind": 6,
+        "importPath": "compras.models",
+        "description": "compras.models",
+        "peekOfCode": "class Compra_Producto(models.Model):\n    compra_id = models.ForeignKey(Compra, on_delete=models.CASCADE, related_name='compra_productos')\n    producto_id = models.ForeignKey('inventario.producto', on_delete=models.CASCADE, related_name='compra_productos')\n    cantidad = models.IntegerField()\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        #return self.compra_id # Esto devuelve el objeto Compra, no una cadena\n        return f\"Compra: {self.compra_id} | Producto: {self.producto_id} | Cantidad: {self.cantidad}\"",
+        "detail": "compras.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "compras.models",
+        "description": "compras.models",
+        "peekOfCode": "User = get_user_model()  # para hacer referencia a un tipo de usuario(cliente o proveedor) que se ha creado en el sistema\n# Clase Producto\nclass Compra(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='compras')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='compras')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)",
+        "detail": "compras.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "compras.urls",
+        "description": "compras.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n]",
+        "detail": "compras.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "compras.views",
+        "description": "compras.views",
+        "peekOfCode": "def index(request):\n    # productos = Producto.objects.all()\n    return HttpResponse(\"esta es la view de compras y compras productos\")",
+        "detail": "compras.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "estadisticas.migrations.0001_initial",
+        "description": "estadisticas.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Estadistica',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('tipo_venta', models.CharField(max_length=100)),",
+        "detail": "estadisticas.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "EstadisticaAdmin",
+        "kind": 6,
+        "importPath": "estadisticas.admin",
+        "description": "estadisticas.admin",
+        "peekOfCode": "class EstadisticaAdmin(admin.ModelAdmin):\n    list_display = ('tipo_venta', 'fecha_inicio', 'fecha_fin', 'total_ventas', 'total_compras', 'ganancias', 'perdidas')\nadmin.site.register(Estadistica, EstadisticaAdmin)",
+        "detail": "estadisticas.admin",
+        "documentation": {}
+    },
+    {
+        "label": "EstadisticasConfig",
+        "kind": 6,
+        "importPath": "estadisticas.apps",
+        "description": "estadisticas.apps",
+        "peekOfCode": "class EstadisticasConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'estadisticas'",
+        "detail": "estadisticas.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Estadistica",
+        "kind": 6,
+        "importPath": "estadisticas.models",
+        "description": "estadisticas.models",
+        "peekOfCode": "class Estadistica(models.Model):\n    tipo_venta = models.CharField(max_length=100)\n    fecha_inicio = models.DateField()\n    fecha_fin = models.DateField()\n    total_ventas = models.DecimalField(max_digits=10, decimal_places=2)\n    total_compras = models.DecimalField(max_digits=10, decimal_places=2)\n    ganancias = models.DecimalField(max_digits=10, decimal_places=2)\n    perdidas = models.DecimalField(max_digits=10, decimal_places=2)\n    def __str__(self):\n        return f\"Estadistica {self.tipo_venta} desde {self.fecha_inicio} hasta {self.fecha_fin}\"",
+        "detail": "estadisticas.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "estadisticas.urls",
+        "description": "estadisticas.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n]",
+        "detail": "estadisticas.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "estadisticas.views",
+        "description": "estadisticas.views",
+        "peekOfCode": "def index(request):\n    # productos = Producto.objects.all()\n    return HttpResponse(\"esta es la view de Estadisticas\")",
+        "detail": "estadisticas.views",
+        "documentation": {}
+    },
+    {
+        "label": "InicioConfig",
+        "kind": 6,
+        "importPath": "inicio.apps",
+        "description": "inicio.apps",
+        "peekOfCode": "class InicioConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'inicio'",
+        "detail": "inicio.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "inicio.urls",
+        "description": "inicio.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.home, name='home'),\n]",
+        "detail": "inicio.urls",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "inicio.views",
+        "description": "inicio.views",
+        "peekOfCode": "def home(request):\n    return render(request, 'inicio/home.html')",
+        "detail": "inicio.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "inventario.migrations.0001_initial",
+        "description": "inventario.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Categoria',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('nombre', models.CharField(max_length=100)),",
+        "detail": "inventario.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "inventario.migrations.0002_proveedor_rubro",
+        "description": "inventario.migrations.0002_proveedor_rubro",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('inventario', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='proveedor',\n            name='rubro',\n            field=models.CharField(default=1, max_length=100),\n            preserve_default=False,",
+        "detail": "inventario.migrations.0002_proveedor_rubro",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoAdmin",
+        "kind": 6,
+        "importPath": "inventario.admin",
+        "description": "inventario.admin",
+        "peekOfCode": "class ProductoAdmin(admin.ModelAdmin):\n    list_display = ('nombre', 'precio', 'stock', 'proveedor', 'categoria', 'creado_en')\nclass CategoriaAdmin(admin.ModelAdmin):\n    list_display = ('nombre',)\nclass ProveedorAdmin(admin.ModelAdmin):\n    list_display = ('nombre', 'direccion', 'email','rubro', 'creado_en')\nadmin.site.register(Producto, ProductoAdmin)\nadmin.site.register(Categoria, CategoriaAdmin)\nadmin.site.register(Proveedor, ProveedorAdmin)",
+        "detail": "inventario.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CategoriaAdmin",
+        "kind": 6,
+        "importPath": "inventario.admin",
+        "description": "inventario.admin",
+        "peekOfCode": "class CategoriaAdmin(admin.ModelAdmin):\n    list_display = ('nombre',)\nclass ProveedorAdmin(admin.ModelAdmin):\n    list_display = ('nombre', 'direccion', 'email','rubro', 'creado_en')\nadmin.site.register(Producto, ProductoAdmin)\nadmin.site.register(Categoria, CategoriaAdmin)\nadmin.site.register(Proveedor, ProveedorAdmin)",
+        "detail": "inventario.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorAdmin",
+        "kind": 6,
+        "importPath": "inventario.admin",
+        "description": "inventario.admin",
+        "peekOfCode": "class ProveedorAdmin(admin.ModelAdmin):\n    list_display = ('nombre', 'direccion', 'email','rubro', 'creado_en')\nadmin.site.register(Producto, ProductoAdmin)\nadmin.site.register(Categoria, CategoriaAdmin)\nadmin.site.register(Proveedor, ProveedorAdmin)",
+        "detail": "inventario.admin",
+        "documentation": {}
+    },
+    {
+        "label": "InventarioConfig",
+        "kind": 6,
+        "importPath": "inventario.apps",
+        "description": "inventario.apps",
+        "peekOfCode": "class InventarioConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'inventario'",
+        "detail": "inventario.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Categoria",
+        "kind": 6,
+        "importPath": "inventario.models",
+        "description": "inventario.models",
+        "peekOfCode": "class Categoria(models.Model):\n    nombre = models.CharField(max_length=100)\n    def __str__(self):\n        return self.nombre\n# Clase Producto\nclass Producto(models.Model):\n    nombre = models.CharField(max_length=150)\n    descripcion = models.TextField(blank=True)\n    precio = models.DecimalField(max_digits=10, decimal_places=2)\n    stock = models.IntegerField()",
+        "detail": "inventario.models",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "kind": 6,
+        "importPath": "inventario.models",
+        "description": "inventario.models",
+        "peekOfCode": "class Producto(models.Model):\n    nombre = models.CharField(max_length=150)\n    descripcion = models.TextField(blank=True)\n    precio = models.DecimalField(max_digits=10, decimal_places=2)\n    stock = models.IntegerField()\n    stock_minimo = models.IntegerField(default=0)\n    proveedor = models.ForeignKey('inventario.Proveedor', on_delete=models.CASCADE, related_name='productos')\n    categoria = models.ForeignKey('Categoria', on_delete=models.CASCADE, related_name='productos')\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):",
+        "detail": "inventario.models",
+        "documentation": {}
+    },
+    {
+        "label": "Proveedor",
+        "kind": 6,
+        "importPath": "inventario.models",
+        "description": "inventario.models",
+        "peekOfCode": "class Proveedor(models.Model):\n    nombre = models.CharField(max_length=150)\n    direccion = models.CharField(max_length=255)\n    telefono = models.CharField(max_length=20)\n    email = models.EmailField()\n    tipo_usuario = models.CharField(max_length=50, choices=[\n        ('empresa', 'Empresa'),\n        ('particular', 'Particular')\n    ])\n    # proveedor = models.ForeignKey('productos.Producto', on_delete=models.CASCADE, related_name='proveedores')",
+        "detail": "inventario.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "inventario.urls",
+        "description": "inventario.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n]",
+        "detail": "inventario.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "inventario.views",
+        "description": "inventario.views",
+        "peekOfCode": "def index(request):\n    # productos = Producto.objects.all()\n    return HttpResponse(\"esta es la view de productos y proveedores\")",
+        "detail": "inventario.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "suministros.asgi",
+        "description": "suministros.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "suministros.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-)-26-=ed402b4ji^8=n_!8ptlc=mowb_m=4y(p&b#h@lp*+93p'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-)-26-=ed402b4ji^8=n_!8ptlc=mowb_m=4y(p&b#h@lp*+93p'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    \"compras.apps.ComprasConfig\",",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    \"compras.apps.ComprasConfig\",\n    \"estadisticas.apps.EstadisticasConfig\",\n    \"inventario.apps.InventarioConfig\",",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'suministros.urls'",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "ROOT_URLCONF = 'suministros.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'suministros.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\n# Base de datos creada en PGadmin Prostresql 17\n\"\"\"DATABASES = {\n    'default': {\n        'ENGINE':'django.db.backends.postgresql',\n        'NAME':'sumindb'\n        'USER':'postgres',\n        'PASSWORD':'niki2025',",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"DATABASES",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "\"\"\"DATABASES = {\n    'default': {\n        'ENGINE':'django.db.backends.postgresql',\n        'NAME':'sumindb'\n        'USER':'postgres',\n        'PASSWORD':'niki2025',\n        'HOST':'localhost',\n        'PORT':'5432',\n    }\n}\"\"\"",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE':'django.db.backends.postgresql',\n        'OPTIONS':{\n            'options':'-c client_encoding=UTF8',\n        },\n        'NAME':'sumindb',\n        'USER':'postgres',\n        'PASSWORD':'niki2025',\n        'HOST':'localhost',",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "suministros.settings",
+        "description": "suministros.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "suministros.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "suministros.urls",
+        "description": "suministros.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('inicio.urls')),  # 👈 Home en raíz\n    path(\"compras/\", include(\"compras.urls\")),\n    path(\"estadisticas/\", include(\"estadisticas.urls\")),\n    path(\"inventario/\", include(\"inventario.urls\")),\n    path(\"ventas/\", include(\"ventas.urls\")),\n]",
+        "detail": "suministros.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "suministros.wsgi",
+        "description": "suministros.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "suministros.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ventas.migrations.0001_initial",
+        "description": "ventas.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('inventario', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Venta',\n            fields=[",
+        "detail": "ventas.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "VentaAdmin",
+        "kind": 6,
+        "importPath": "ventas.admin",
+        "description": "ventas.admin",
+        "peekOfCode": "class VentaAdmin(admin.ModelAdmin):\n    list_display = ('producto', 'cliente', 'cantidad', 'fecha', 'total', 'creado_en')\nclass Venta_ProductoAdmin(admin.ModelAdmin):\n    list_display = ('venta_id', 'producto_id', 'cantidad', 'precio_unitario', 'creado_en')\nadmin.site.register(Venta, VentaAdmin)\nadmin.site.register(Venta_Producto, Venta_ProductoAdmin)",
+        "detail": "ventas.admin",
+        "documentation": {}
+    },
+    {
+        "label": "Venta_ProductoAdmin",
+        "kind": 6,
+        "importPath": "ventas.admin",
+        "description": "ventas.admin",
+        "peekOfCode": "class Venta_ProductoAdmin(admin.ModelAdmin):\n    list_display = ('venta_id', 'producto_id', 'cantidad', 'precio_unitario', 'creado_en')\nadmin.site.register(Venta, VentaAdmin)\nadmin.site.register(Venta_Producto, Venta_ProductoAdmin)",
+        "detail": "ventas.admin",
+        "documentation": {}
+    },
+    {
+        "label": "VentasConfig",
+        "kind": 6,
+        "importPath": "ventas.apps",
+        "description": "ventas.apps",
+        "peekOfCode": "class VentasConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'ventas'",
+        "detail": "ventas.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Venta",
+        "kind": 6,
+        "importPath": "ventas.models",
+        "description": "ventas.models",
+        "peekOfCode": "class Venta(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='ventas')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='ventas')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        return self.producto.nombre",
+        "detail": "ventas.models",
+        "documentation": {}
+    },
+    {
+        "label": "Venta_Producto",
+        "kind": 6,
+        "importPath": "ventas.models",
+        "description": "ventas.models",
+        "peekOfCode": "class Venta_Producto(models.Model):\n    venta_id = models.ForeignKey(Venta, on_delete=models.CASCADE, related_name='venta_productos')\n    producto_id = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='venta_productos')\n    cantidad = models.IntegerField()\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        return self.venta_id",
+        "detail": "ventas.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "ventas.models",
+        "description": "ventas.models",
+        "peekOfCode": "User = get_user_model()  # para hacer referencia a un tipo de usuario(cliente o proveedor) que se ha creado en el sistema\n# Clase Producto\nclass Venta(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='ventas')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='ventas')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)",
+        "detail": "ventas.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "ventas.urls",
+        "description": "ventas.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n]",
+        "detail": "ventas.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "ventas.views",
+        "description": "ventas.views",
+        "peekOfCode": "def index(request):\n    # productos = Producto.objects.all()\n    return HttpResponse(\"esta es la view de ventas y ventas productos\")",
+        "detail": "ventas.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'suministros.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
