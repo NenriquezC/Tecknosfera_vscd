@@ -442,11 +442,35 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
         "documentation": {}
     },
     {
@@ -726,6 +750,15 @@
         "documentation": {}
     },
     {
+        "label": "ProductoForm",
+        "kind": 6,
+        "importPath": "inventario.forms",
+        "description": "inventario.forms",
+        "peekOfCode": "class ProductoForm(forms.ModelForm):\n    class Meta:\n        model = Producto\n        fields = '__all__'  # Usará todos los campos de Producto\n        #fields = ['nombre', 'categoria', 'precio', 'stock'] se puede cambiar all por esto",
+        "detail": "inventario.forms",
+        "documentation": {}
+    },
+    {
         "label": "Categoria",
         "kind": 6,
         "importPath": "inventario.models",
@@ -757,7 +790,7 @@
         "kind": 5,
         "importPath": "inventario.urls",
         "description": "inventario.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('', views.inicio, name='inicio'),  # ← Este nombre es el que usas en tu template\n    path('inventario/', views.inventario, name='inventario'),\n    path('producto/agregar/', views.agregar_producto, name='agregar_producto'),\n    path('producto/editar/<int:producto_id>/', views.editar_producto, name='editar_producto'),\n    path('producto/eliminar/<int:producto_id>/', views.eliminar_producto, name='eliminar_producto'),\n]",
         "detail": "inventario.urls",
         "documentation": {}
     },
@@ -766,7 +799,52 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def index(request):\n    # productos = Producto.objects.all()\n    return HttpResponse(\"esta es la view de productos y proveedores\")",
+        "peekOfCode": "def index(request):\n    productos = Producto.objects.all()\n    #productos = Producto.objects.values()  # Esto devuelve una lista de diccionarios\n    # productos = Producto.objects.all()\n    return render(request, \"productos.html\", {\"productos\": productos})\n    #return HttpResponse(\"esta es la view de productos y proveedores\")\ndef inventario(request):\n    opcion = request.GET.get(\"tabla\", \"\")  # \"productos\" o \"proveedores\"\n    productos = Producto.objects.all() if opcion == \"productos\" else None\n    proveedores = Proveedor.objects.all() if opcion == \"proveedores\" else None",
+        "detail": "inventario.views",
+        "documentation": {}
+    },
+    {
+        "label": "inventario",
+        "kind": 2,
+        "importPath": "inventario.views",
+        "description": "inventario.views",
+        "peekOfCode": "def inventario(request):\n    opcion = request.GET.get(\"tabla\", \"\")  # \"productos\" o \"proveedores\"\n    productos = Producto.objects.all() if opcion == \"productos\" else None\n    proveedores = Proveedor.objects.all() if opcion == \"proveedores\" else None\n    # Procesar productos para el aviso de bajo stock\n    #productos_alerta = []\n    #if productos:\n    #    for p in productos:\n    #        if p.stock_minimo:  # Evita división por cero\n    #            porcentaje = p.stock / p.stock_minimo * 100",
+        "detail": "inventario.views",
+        "documentation": {}
+    },
+    {
+        "label": "agregar_producto",
+        "kind": 2,
+        "importPath": "inventario.views",
+        "description": "inventario.views",
+        "peekOfCode": "def agregar_producto(request):\n    if request.method == 'POST':\n        form = ProductoForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('inventario')  # Vuelve a la página inventario\n    else:\n        form = ProductoForm()\n    return render(request, 'agregar_producto.html', {'form': form})\ndef editar_producto(request, producto_id):",
+        "detail": "inventario.views",
+        "documentation": {}
+    },
+    {
+        "label": "editar_producto",
+        "kind": 2,
+        "importPath": "inventario.views",
+        "description": "inventario.views",
+        "peekOfCode": "def editar_producto(request, producto_id):\n    producto = get_object_or_404(Producto, id=producto_id)\n    if request.method == 'POST':\n        form = ProductoForm(request.POST, instance=producto)\n        if form.is_valid():\n            form.save()\n            return redirect('inventario')\n    else:\n        form = ProductoForm(instance=producto)\n    return render(request, 'editar_producto.html', {'form': form})",
+        "detail": "inventario.views",
+        "documentation": {}
+    },
+    {
+        "label": "eliminar_producto",
+        "kind": 2,
+        "importPath": "inventario.views",
+        "description": "inventario.views",
+        "peekOfCode": "def eliminar_producto(request, producto_id):\n    producto = get_object_or_404(Producto, id=producto_id)\n    if request.method == 'POST':\n        producto.delete()\n        return redirect('inventario')\n    return render(request, 'eliminar_producto.html', {'producto': producto})\ndef inicio(request): #para el boton de la pantalla de inicio\n    return render(request, 'inicio.html')",
+        "detail": "inventario.views",
+        "documentation": {}
+    },
+    {
+        "label": "inicio",
+        "kind": 2,
+        "importPath": "inventario.views",
+        "description": "inventario.views",
+        "peekOfCode": "def inicio(request): #para el boton de la pantalla de inicio\n    return render(request, 'inicio.html')",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -946,7 +1024,7 @@
         "kind": 5,
         "importPath": "suministros.urls",
         "description": "suministros.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('inicio.urls')),  # 👈 Home en raíz\n    path(\"compras/\", include(\"compras.urls\")),\n    path(\"estadisticas/\", include(\"estadisticas.urls\")),\n    path(\"inventario/\", include(\"inventario.urls\")),\n    path(\"ventas/\", include(\"ventas.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('inicio.urls')), \n    path('', include('inventario.urls')),  # Esto incluye las URLs de la app # 👈 Home en raíz\n    path(\"compras/\", include(\"compras.urls\")),\n    path(\"estadisticas/\", include(\"estadisticas.urls\")),\n    path(\"inventario/\", include(\"inventario.urls\")),\n    path(\"ventas/\", include(\"ventas.urls\")),\n]",
         "detail": "suministros.urls",
         "documentation": {}
     },

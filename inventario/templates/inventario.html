@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Inventario</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin: 40px; }
+        table { margin: auto; border-collapse: collapse; width: 80%; margin-top: 30px; }
+        th, td { border: 1px solid #aaa; padding: 8px; text-align: center; }
+        th { background-color: #f0f0f0; }
+        select, button { padding: 10px 20px; font-size: 16px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Inventario</h1>
+    <!--<a href="{% url 'inicio' %}" class="btn btn-secondary">Volver al inicio</a> <!--BOTON volver al inicio-->
+    <a href="/" class="btn btn-secondary">Volver al inicio</a>
+    <form method="get">
+        <label for="tabla">¿Qué deseas consultar?</label>
+        <select name="tabla" id="tabla">
+            <option value="">--- Selecciona ---</option>
+            <option value="productos" {% if opcion == 'productos' %}selected{% endif %}>Productos</option>
+            <option value="proveedores" {% if opcion == 'proveedores' %}selected{% endif %}>Proveedores</option>
+        </select>
+        <button type="submit">Ver</button>
+    </form>
+
+    {% if opcion == "productos" and productos %}
+        <h2>Lista de Productos</h2>
+        <a href="{% url 'agregar_producto' %}" class="btn">Agregar producto</a>
+        <table>
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Stock Minimo</th>
+                <th>Proveedor</th>
+                <th>Categoria</th>
+                <th>Creación</th>
+                    <!-- Agrega más columnas según tu modelo -->
+                </tr>
+            </thead>
+            <tbody>
+                {% for producto in productos %}
+                <tr>
+                <td>{{ producto.id }}</td>
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.descripcion }}</td>
+                <td>{{ producto.precio }}</td>
+                <td>{{ producto.stock }}</td>
+                <td>{{ producto.stock_minimo }}</td>
+                <td>{{ producto.proveedor }}</td>
+                <td>{{ producto.categoria }}</td>
+                <td>{{ producto.creado_en }}</td>
+                <td>
+                    {% if producto.id in productos_alerta %}
+                        <span style="color:red; font-weight:bold;">¡Bajo stock! <br>Contactar a proveedor</span>
+                    {% else %}
+                        -
+                    {% endif %}
+                </td>
+                <td>
+                <a href="{% url 'editar_producto' producto.id %}">Editar</a>
+                <a href="{% url 'eliminar_producto' producto.id %}" onclick="return confirm('¿Seguro que quieres eliminar este producto?');">Eliminar</a>
+                </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% elif opcion == "proveedores" and proveedores %}
+        <h2>Lista de Proveedores</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Tipo Usuario</th>
+                    <th>Rubro</th>
+                    <th>Creación</th>
+                    <!-- Agrega más columnas según tu modelo -->
+                </tr>
+            </thead>
+            <tbody>
+                {% for proveedor in proveedores %}
+                <tr>
+                    <td>{{ proveedor.id }}</td>
+                    <td>{{ proveedor.nombre }}</td>
+                    <td>{{ proveedor.direccion }}</td>
+                    <td>{{ proveedor.telefono }}</td>
+                    <td>{{ proveedor.email }}</td>
+                    <td>{{ proveedor.tipo_usuario }}</td>
+                    <td>{{ proveedor.rubro }}</td>
+                    <td>{{ proveedor.creado_en }}</td>
+                    <!-- Agrega más filas según tu modelo -->
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+</body>
+</html>
