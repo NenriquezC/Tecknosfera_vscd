@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Venta #{{ venta.id }}</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #f5f5f5; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            color: #333; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 3px solid #007bff; 
+            padding-bottom: 10px; 
+        }
+        .venta-header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .venta-header h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.5em;
+        }
+        .header-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .info-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .info-label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .info-value {
+            font-size: 1.1em;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .section h3 {
+            color: #333;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 10px; 
+            background: white;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #f8f9fa; 
+            font-weight: bold;
+            color: #495057;
+        }
+        tr:nth-child(even) { 
+            background-color: #f8f9fa; 
+        }
+        .total-row {
+            background-color: #e9ecef !important;
+            font-weight: bold;
+        }
+        .total-amount {
+            font-size: 1.3em;
+            color: #28a745;
+        }
+        .btn {
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+            margin: 5px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-success:hover {
+            background-color: #1e7e34;
+        }
+        .controls {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+        }
+        .no-products {
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+            padding: 20px;
+        }
+        @media print {
+            .controls { display: none; }
+            .container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📄 Detalle de Venta #{{ venta.id }}</h1>
+        
+        <!-- Información principal de la venta -->
+        <div class="venta-header">
+            <h2>🛒 Información de la Venta</h2>
+            <div class="header-info">
+                <div class="info-item">
+                    <span class="info-label">📅 Fecha:</span>
+                    <span class="info-value">{{ venta.fecha|date:"d/m/Y" }}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">👤 Cliente:</span>
+                    <span class="info-value">
+                        {% if venta.cliente.first_name or venta.cliente.last_name %}
+                            {{ venta.cliente.first_name }} {{ venta.cliente.last_name }}
+                        {% else %}
+                            {{ venta.cliente.username }}
+                        {% endif %}
+                    </span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">📧 Email:</span>
+                    <span class="info-value">{{ venta.cliente.email|default:"No especificado" }}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">🕒 Creado:</span>
+                    <span class="info-value">{{ venta.creado_en|date:"d/m/Y H:i" }}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Productos vendidos -->
+        <div class="section">
+            <h3>🛍️ Productos Vendidos</h3>
+            {% if venta_productos %}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio Unitario</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in venta_productos %}
+                            <tr>
+                                <td>
+                                    <strong>{{ item.producto_id.nombre }}</strong>
+                                    {% if item.producto_id.descripcion %}
+                                        <br><small style="color: #666;">{{ item.producto_id.descripcion|truncatewords:10 }}</small>
+                                    {% endif %}
+                                </td>
+                                <td>${{ item.precio_unitario|floatformat:2 }}</td>
+                                <td>{{ item.cantidad }}</td>
+                                <td>${{ item.precio_unitario|floatformat:2|mul:item.cantidad }}</td>
+                            </tr>
+                        {% endfor %}
+                        <tr class="total-row">
+                            <td colspan="3"><strong>Total General</strong></td>
+                            <td class="total-amount"><strong>${{ venta.total|floatformat:2 }}</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            {% else %}
+                <div class="no-products">
+                    <p>No hay productos registrados para esta venta.</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Resumen de la venta -->
+        <div class="section">
+            <h3>📊 Resumen</h3>
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5em; color: #007bff; font-weight: bold;">
+                            {{ venta_productos|length }}
+                        </div>
+                        <div style="color: #666;">Tipos de Productos</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5em; color: #28a745; font-weight: bold;">
+                            {{ venta.cantidad }}
+                        </div>
+                        <div style="color: #666;">Cantidad Total</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5em; color: #dc3545; font-weight: bold;">
+                            ${{ venta.total|floatformat:2 }}
+                        </div>
+                        <div style="color: #666;">Total de la Venta</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <div class="controls">
+            <a href="{% url 'ventas_index' %}" class="btn btn-primary">📋 Volver a Ventas</a>
+            <a href="{% url 'nueva_venta' %}" class="btn btn-success">➕ Nueva Venta</a>
+            <button onclick="window.print()" class="btn btn-secondary">🖨️ Imprimir</button>
+        </div>
+    </div>
+
+    <script>
+        // Función para el template tag mul (multiplicación)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Calcular subtotales dinámicamente si el template tag mul no funciona
+            const rows = document.querySelectorAll('tbody tr:not(.total-row)');
+            rows.forEach(row => {
+                const cells = row.querySelectorAll('td');
+                if (cells.length >= 4) {
+                    const precio = parseFloat(cells[1].textContent.replace('$', ''));
+                    const cantidad = parseInt(cells[2].textContent);
+                    const subtotal = precio * cantidad;
+                    cells[3].textContent = '$' + subtotal.toFixed(2);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

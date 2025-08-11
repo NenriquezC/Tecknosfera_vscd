@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Ventas</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #f5f5f5; 
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            color: #333; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 3px solid #007bff; 
+            padding-bottom: 10px; 
+        }
+        .stats-cards {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            flex: 1;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+        .stat-card .number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .search-form {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-success:hover {
+            background-color: #1e7e34;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+        .form-control {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+            background: white;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #f8f9fa; 
+            font-weight: bold;
+            color: #495057;
+        }
+        tr:nth-child(even) { 
+            background-color: #f8f9fa; 
+        }
+        tr:hover { 
+            background-color: #e9ecef; 
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 20px;
+        }
+        .pagination a, .pagination span {
+            padding: 8px 12px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            color: #007bff;
+        }
+        .pagination .current {
+            background-color: #007bff;
+            color: white;
+        }
+        .no-data {
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+            padding: 40px;
+        }
+        .messages {
+            margin-bottom: 20px;
+        }
+        .alert {
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .alert-success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .alert-error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Gestión de Ventas</h1>
+        
+        <!-- Mensajes -->
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <!-- Tarjetas de estadísticas -->
+        <div class="stats-cards">
+            <div class="stat-card">
+                <h3>Total Ventas</h3>
+                <div class="number">${{ total_ventas|floatformat:2 }}</div>
+            </div>
+            <div class="stat-card">
+                <h3>Cantidad de Ventas</h3>
+                <div class="number">{{ cantidad_ventas }}</div>
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <div class="controls">
+            <div>
+                <a href="{% url 'nueva_venta' %}" class="btn btn-success">➕ Nueva Venta</a>
+                <a href="{% url 'estadisticas_ventas' %}" class="btn btn-primary">📈 Estadísticas</a>
+                <a href="/" class="btn btn-secondary">🏠 Inicio</a>
+            </div>
+            
+            <!-- Formulario de búsqueda -->
+            <form method="get" class="search-form">
+                <input type="text" name="search" placeholder="Buscar por producto, cliente..." 
+                       value="{{ search_query }}" class="form-control">
+                <input type="date" name="fecha_desde" value="{{ fecha_desde }}" 
+                       placeholder="Fecha desde" class="form-control">
+                <input type="date" name="fecha_hasta" value="{{ fecha_hasta }}" 
+                       placeholder="Fecha hasta" class="form-control">
+                <button type="submit" class="btn btn-primary">🔍 Buscar</button>
+                {% if search_query or fecha_desde or fecha_hasta %}
+                    <a href="{% url 'ventas_index' %}" class="btn btn-secondary">✖ Limpiar</a>
+                {% endif %}
+            </form>
+        </div>
+
+        <!-- Tabla de ventas -->
+        {% if ventas %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Cliente</th>
+                        <th>Producto Principal</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for venta in ventas %}
+                        <tr>
+                            <td>{{ venta.id }}</td>
+                            <td>{{ venta.fecha|date:"d/m/Y" }}</td>
+                            <td>
+                                {% if venta.cliente.first_name or venta.cliente.last_name %}
+                                    {{ venta.cliente.first_name }} {{ venta.cliente.last_name }}
+                                {% else %}
+                                    {{ venta.cliente.username }}
+                                {% endif %}
+                            </td>
+                            <td>{{ venta.producto.nombre }}</td>
+                            <td>{{ venta.cantidad }}</td>
+                            <td>${{ venta.total|floatformat:2 }}</td>
+                            <td>
+                                <a href="{% url 'detalle_venta' venta.id %}" class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">
+                                    👁 Ver Detalle
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <!-- Paginación -->
+            {% if ventas.has_other_pages %}
+                <div class="pagination">
+                    {% if ventas.has_previous %}
+                        <a href="?page={{ ventas.previous_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if fecha_desde %}&fecha_desde={{ fecha_desde }}{% endif %}{% if fecha_hasta %}&fecha_hasta={{ fecha_hasta }}{% endif %}">&laquo; Anterior</a>
+                    {% endif %}
+                    
+                    {% for num in ventas.paginator.page_range %}
+                        {% if ventas.number == num %}
+                            <span class="current">{{ num }}</span>
+                        {% else %}
+                            <a href="?page={{ num }}{% if search_query %}&search={{ search_query }}{% endif %}{% if fecha_desde %}&fecha_desde={{ fecha_desde }}{% endif %}{% if fecha_hasta %}&fecha_hasta={{ fecha_hasta }}{% endif %}">{{ num }}</a>
+                        {% endif %}
+                    {% endfor %}
+                    
+                    {% if ventas.has_next %}
+                        <a href="?page={{ ventas.next_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if fecha_desde %}&fecha_desde={{ fecha_desde }}{% endif %}{% if fecha_hasta %}&fecha_hasta={{ fecha_hasta }}{% endif %}">Siguiente &raquo;</a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% else %}
+            <div class="no-data">
+                <h3>No hay ventas registradas</h3>
+                <p>¡Comienza creando tu primera venta!</p>
+                <a href="{% url 'nueva_venta' %}" class="btn btn-success">➕ Crear Primera Venta</a>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

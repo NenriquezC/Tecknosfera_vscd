@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Venta</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #f5f5f5; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            color: #333; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 3px solid #28a745; 
+            padding-bottom: 10px; 
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0,123,255,0.3);
+        }
+        select.form-control {
+            height: 45px;
+        }
+        .btn {
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-success:hover {
+            background-color: #1e7e34;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+        .btn-info {
+            background-color: #17a2b8;
+            color: white;
+        }
+        .btn-info:hover {
+            background-color: #138496;
+        }
+        .productos-section {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #f8f9fa;
+        }
+        .producto-item {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .producto-item select, .producto-item input {
+            flex: 1;
+        }
+        .producto-info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .total-section {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .total-amount {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .controls {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .controls .btn {
+            margin: 0 10px;
+        }
+        .messages {
+            margin-bottom: 20px;
+        }
+        .alert {
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .alert-success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .alert-error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .remove-btn {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Nueva Venta</h1>
+        
+        <!-- Mensajes -->
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <form method="post" id="ventaForm">
+            {% csrf_token %}
+            
+            <!-- Selección de cliente -->
+            <div class="form-group">
+                <label for="cliente_id">👤 Cliente:</label>
+                <select name="cliente_id" id="cliente_id" class="form-control" required>
+                    <option value="">Seleccione un cliente...</option>
+                    {% for cliente in clientes %}
+                        <option value="{{ cliente.id }}">
+                            {% if cliente.first_name or cliente.last_name %}
+                                {{ cliente.first_name }} {{ cliente.last_name }} ({{ cliente.username }})
+                            {% else %}
+                                {{ cliente.username }}
+                            {% endif %}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Sección de productos -->
+            <div class="productos-section">
+                <h3>🛍️ Productos</h3>
+                <div id="productos-container">
+                    <div class="producto-item">
+                        <select name="productos" class="form-control producto-select" required>
+                            <option value="">Seleccione un producto...</option>
+                            {% for producto in productos %}
+                                <option value="{{ producto.id }}" 
+                                        data-precio="{{ producto.precio }}" 
+                                        data-stock="{{ producto.stock }}">
+                                    {{ producto.nombre }} - ${{ producto.precio }} (Stock: {{ producto.stock }})
+                                </option>
+                            {% endfor %}
+                        </select>
+                        <input type="number" name="cantidades" class="form-control cantidad-input" 
+                               placeholder="Cantidad" min="1" required>
+                        <button type="button" class="btn btn-danger remove-btn" onclick="removeProducto(this)">
+                            ✖ Quitar
+                        </button>
+                        <div class="producto-info"></div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info" onclick="addProducto()">
+                    ➕ Agregar Producto
+                </button>
+            </div>
+
+            <!-- Total -->
+            <div class="total-section">
+                <h3>Total de la Venta</h3>
+                <div class="total-amount" id="total-amount">$0.00</div>
+            </div>
+
+            <!-- Controles -->
+            <div class="controls">
+                <button type="submit" class="btn btn-success">💾 Guardar Venta</button>
+                <a href="{% url 'ventas_index' %}" class="btn btn-secondary">❌ Cancelar</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Función para agregar un nuevo producto
+        function addProducto() {
+            const container = document.getElementById('productos-container');
+            const newItem = container.children[0].cloneNode(true);
+            
+            // Limpiar valores
+            newItem.querySelector('.producto-select').selectedIndex = 0;
+            newItem.querySelector('.cantidad-input').value = '';
+            newItem.querySelector('.producto-info').innerHTML = '';
+            
+            container.appendChild(newItem);
+            updateTotal();
+        }
+
+        // Función para remover un producto
+        function removeProducto(button) {
+            const container = document.getElementById('productos-container');
+            if (container.children.length > 1) {
+                button.parentElement.remove();
+                updateTotal();
+            } else {
+                alert('Debe mantener al menos un producto en la venta.');
+            }
+        }
+
+        // Función para actualizar el total
+        function updateTotal() {
+            let total = 0;
+            const productoItems = document.querySelectorAll('.producto-item');
+            
+            productoItems.forEach(item => {
+                const select = item.querySelector('.producto-select');
+                const cantidadInput = item.querySelector('.cantidad-input');
+                const infoDiv = item.querySelector('.producto-info');
+                
+                if (select.value && cantidadInput.value) {
+                    const selectedOption = select.options[select.selectedIndex];
+                    const precio = parseFloat(selectedOption.dataset.precio);
+                    const stock = parseInt(selectedOption.dataset.stock);
+                    const cantidad = parseInt(cantidadInput.value);
+                    
+                    if (cantidad > stock) {
+                        cantidadInput.style.borderColor = '#dc3545';
+                        infoDiv.innerHTML = `<span style="color: #dc3545;">⚠️ Stock insuficiente! Disponible: ${stock}</span>`;
+                    } else {
+                        cantidadInput.style.borderColor = '#28a745';
+                        const subtotal = precio * cantidad;
+                        total += subtotal;
+                        infoDiv.innerHTML = `<span style="color: #28a745;">✓ Subtotal: $${subtotal.toFixed(2)}</span>`;
+                    }
+                } else {
+                    cantidadInput.style.borderColor = '#ddd';
+                    infoDiv.innerHTML = '';
+                }
+            });
+            
+            document.getElementById('total-amount').textContent = `$${total.toFixed(2)}`;
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Agregar event listeners a los selects y inputs existentes
+            document.getElementById('productos-container').addEventListener('change', updateTotal);
+            document.getElementById('productos-container').addEventListener('input', updateTotal);
+            
+            // Validación del formulario
+            document.getElementById('ventaForm').addEventListener('submit', function(e) {
+                const productoItems = document.querySelectorAll('.producto-item');
+                let hasErrors = false;
+                
+                productoItems.forEach(item => {
+                    const select = item.querySelector('.producto-select');
+                    const cantidadInput = item.querySelector('.cantidad-input');
+                    
+                    if (select.value && cantidadInput.value) {
+                        const selectedOption = select.options[select.selectedIndex];
+                        const stock = parseInt(selectedOption.dataset.stock);
+                        const cantidad = parseInt(cantidadInput.value);
+                        
+                        if (cantidad > stock) {
+                            hasErrors = true;
+                        }
+                    }
+                });
+                
+                if (hasErrors) {
+                    e.preventDefault();
+                    alert('Por favor, corrija los errores de stock antes de continuar.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
