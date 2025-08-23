@@ -13,6 +13,8 @@ class Venta(models.Model):
     producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='ventas')
     cliente = models.ForeignKey(User, on_delete=models.CASCADE,
                                 related_name='ventas')  # aquí uso el modelo de usuario que se ha creado en el sistema
+    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)
+    descuento = models.DecimalField(max_digits=5, decimal_places=2, default=0.00) #agregado recientemente
     cantidad = models.IntegerField()
     fecha = models.DateField()
     total = models.DecimalField(max_digits=10, decimal_places=2)
@@ -26,9 +28,10 @@ class Venta(models.Model):
 class Venta_Producto(models.Model):
     venta_id = models.ForeignKey(Venta, on_delete=models.CASCADE, related_name='venta_productos')
     producto_id = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='venta_productos')
+    descuento = models.DecimalField(max_digits=5, decimal_places=2, default=0.00)
     cantidad = models.IntegerField()
     precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)
     creado_en = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.venta_id
+        return f"{self.producto_id} x {self.cantidad} en venta #{self.venta_id.pk}"

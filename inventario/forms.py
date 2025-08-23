@@ -1,7 +1,13 @@
 from django import forms # Importa el módulo de formularios de Django
 from .models import Producto, Proveedor # Importa el modelo Producto definido en tu proyecto.
+
+#-----------------------------------------------------------------------------------------------------------------------
 #el formulario de Productos
-class ProductoForm(forms.ModelForm): #Hereda de forms.ModelForm, lo que significa que es un formulario basado en un modelo (en este caso, Producto).
+class ProductoForm(forms.ModelForm):
+    """ :param forms.ModelForm:
+        :return: Un formulario para crear o editar productos.
+    """
+    #Hereda de forms.ModelForm, lo que significa que es un formulario basado en un modelo (en este caso, Producto).
     class Meta:
         model = Producto #Le dice al formulario que se base en el modelo Producto.
         fields = '__all__'  # Usará todos los campos de Producto
@@ -10,6 +16,10 @@ class ProductoForm(forms.ModelForm): #Hereda de forms.ModelForm, lo que signific
             'stock_minimo': forms.NumberInput(attrs={'readonly': 'readonly'}),}
 #El formulario de Proveedores
 class ProveedorForm(forms.ModelForm):
+    """ :param forms.ModelForm:
+        :return: Un formulario para crear o editar proveedores.
+    """
     class Meta:
         model = Proveedor
         fields = '__all__'
+#-----------------------------------------------------------------------------------------------------------------------

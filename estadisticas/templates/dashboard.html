@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard Estadísticas{% endblock %}
+
+{% block content %}
+<style>
+    .dashboard-container {
+        display: flex;
+        min-height: 80vh;
+    }
+    .sidebar-dashboard {
+        width: 240px;
+        background: #34495e;
+        color: #fff;
+        padding: 20px 0;
+        font-family: inherit;
+    }
+    .sidebar-dashboard ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar-dashboard li {
+        margin: 18px 0;
+        text-align: left;
+    }
+    .sidebar-dashboard a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px 30px;
+        display: block;
+        border-radius: 3px;
+        transition: background 0.2s;
+    }
+    .sidebar-dashboard a.active,
+    .sidebar-dashboard a:hover {
+        background: #2c3e50;
+    }
+    .dashboard-main-content {
+        flex: 1;
+        padding: 30px 40px;
+        background: #f8f8f8;
+        min-height: 80vh;
+    }
+</style>
+
+<div class="dashboard-container">
+    <nav class="sidebar-dashboard">
+        <ul>
+            <li><a href="?analisis=ventas"{% if analisis == 'ventas' %} class="active"{% endif %}>Ventas</a></li>
+            <li><a href="?analisis=compras"{% if analisis == 'compras' %} class="active"{% endif %}>Compras</a></li>
+            <li><a href="?analisis=proveedores"{% if analisis == 'proveedores' %} class="active"{% endif %}>Proveedores</a></li>
+            <li><a href="?analisis=productos"{% if analisis == 'productos' %} class="active"{% endif %}>Productos</a></li>
+            <li><a href="?analisis=comparativa"{% if analisis == 'comparativa' %} class="active"{% endif %}>Comparativas</a></li>
+        </ul>
+    </nav>
+    <div class="dashboard-main-content">
+        {% include "dashboard_content.html" %}
+    </div>
+</div>
+{% endblock %}

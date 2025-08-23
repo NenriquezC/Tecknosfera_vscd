@@ -12,12 +12,16 @@ Al heredar de admin.ModelAdmin, puedes definir atributos (como list_display,
 
 class ProductoAdmin(admin.ModelAdmin):
     readonly_fields = ('stock_minimo',)
-    list_display = ('nombre', 'precio', 'stock', 'proveedor', 'categoria', 'creado_en')
+    list_display = ('nombre', 'precio_compra', 'stock', 'proveedor', 'categoria','ganancia', 'creado_en')
     #bloqueo de campos para que no se puedan editar (stock_minimo es readonly siempre)
     def get_readonly_fields(self, request, obj=None):
         # stock_minimo es readonly siempre
         return self.readonly_fields
 
+    def precio_venta_display(self, obj): #Si quieres mostrar el precio de venta calculado:
+        return obj.precio_compra * (1 + obj.ganancia / 100)
+
+    precio_venta_display.short_description = 'Precio de Venta'
 
 class CategoriaAdmin(admin.ModelAdmin):
     list_display = ('nombre',)
@@ -27,6 +31,9 @@ class ProveedorAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'direccion', 'email', 'creado_en')
 
 
+
 admin.site.register(Producto, ProductoAdmin)
 admin.site.register(Categoria, CategoriaAdmin)
 admin.site.register(Proveedor, ProveedorAdmin)
+
+

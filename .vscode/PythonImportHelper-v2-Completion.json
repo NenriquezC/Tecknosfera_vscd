@@ -178,7 +178,7 @@
         "documentation": {}
     },
     {
-        "label": "admin",
+        "label": "messages",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -195,6 +195,22 @@
     },
     {
         "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -263,6 +279,30 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
         "documentation": {}
     },
     {
@@ -426,39 +466,23 @@
         "documentation": {}
     },
     {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -530,11 +554,83 @@
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "Producto",
+        "importPath": "inventario.models",
+        "description": "inventario.models",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "inventario.models",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "inventario.models",
+        "description": "inventario.models",
+        "isExtraImport": true,
+        "detail": "inventario.models",
+        "documentation": {}
+    },
+    {
+        "label": "Proveedor",
+        "importPath": "inventario.models",
+        "description": "inventario.models",
+        "isExtraImport": true,
+        "detail": "inventario.models",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "inventario.models",
+        "description": "inventario.models",
+        "isExtraImport": true,
+        "detail": "inventario.models",
+        "documentation": {}
+    },
+    {
+        "label": "Compra",
+        "importPath": "compras.models",
+        "description": "compras.models",
+        "isExtraImport": true,
+        "detail": "compras.models",
+        "documentation": {}
+    },
+    {
+        "label": "Venta",
+        "importPath": "ventas.models",
+        "description": "ventas.models",
+        "isExtraImport": true,
+        "detail": "ventas.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sum",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sum",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
         "documentation": {}
     },
     {
@@ -571,35 +667,27 @@
         "documentation": {}
     },
     {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "login_required",
         "importPath": "django.contrib.auth.decorators",
         "description": "django.contrib.auth.decorators",
         "isExtraImport": true,
         "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
-        "label": "Sum",
-        "importPath": "django.db.models",
-        "description": "django.db.models",
-        "isExtraImport": true,
-        "detail": "django.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "Q",
-        "importPath": "django.db.models",
-        "description": "django.db.models",
-        "isExtraImport": true,
-        "detail": "django.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "Producto",
-        "importPath": "inventario.models",
-        "description": "inventario.models",
-        "isExtraImport": true,
-        "detail": "inventario.models",
         "documentation": {}
     },
     {
@@ -659,7 +747,7 @@
         "kind": 6,
         "importPath": "compras.admin",
         "description": "compras.admin",
-        "peekOfCode": "class CompraAdmin(admin.ModelAdmin):\n    list_display = ('producto', 'cliente', 'cantidad', 'fecha', 'total', 'creado_en')\nclass Compra_ProductoAdmin(admin.ModelAdmin):\n    list_display = ('compra_id', 'producto_id', 'cantidad', 'precio_unitario', 'creado_en')\nadmin.site.register(Compra, CompraAdmin)\nadmin.site.register(Compra_Producto, Compra_ProductoAdmin)",
+        "peekOfCode": "class CompraAdmin(admin.ModelAdmin):\n    list_display = ('producto', 'cliente', 'precio_unitario',  'cantidad', 'fecha', 'total', 'creado_en')\nclass Compra_ProductoAdmin(admin.ModelAdmin):\n    list_display = ('compra_id', 'producto_id', 'cantidad', 'precio_unitario', 'creado_en')\nadmin.site.register(Compra, CompraAdmin)\nadmin.site.register(Compra_Producto, Compra_ProductoAdmin)",
         "detail": "compras.admin",
         "documentation": {}
     },
@@ -682,11 +770,20 @@
         "documentation": {}
     },
     {
+        "label": "CompraForm",
+        "kind": 6,
+        "importPath": "compras.forms",
+        "description": "compras.forms",
+        "peekOfCode": "class CompraForm(forms.ModelForm): #Creas una clase CompraForm que hereda de forms.ModelForm.\n    class Meta:  #La clase interna Meta sirve para darle a Django instrucciones sobre cómo construir el formulario.\n        model = Compra #Le dices a Django que este formulario se basa en el modelo Compra.\n        fields = ['producto', 'cliente', 'precio_unitario', 'cantidad', 'fecha', 'total','ganancia', 'creado_en']\n        widgets = {\n            'precio_unitario': forms.TextInput(),\n            'total': forms.TextInput(attrs={'readonly': 'readonly'}),\n        }\n#-----------------------------------------------------------------------------------------------------------------------",
+        "detail": "compras.forms",
+        "documentation": {}
+    },
+    {
         "label": "Compra",
         "kind": 6,
         "importPath": "compras.models",
         "description": "compras.models",
-        "peekOfCode": "class Compra(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='compras')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='compras')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        return self.producto.nombre",
+        "peekOfCode": "class Compra(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='compras')\n    #proveedor = models.ForeignKey('inventario.Proveedor', on_delete=models.CASCADE)\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE, related_name='compras')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    #precio_venta = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    ganancia = models.DecimalField(max_digits=5, decimal_places=2, default=0, help_text=\"Porcentaje de ganancia sobre el precio de compra (ejemplo: 20.00 para 20%)\" )",
         "detail": "compras.models",
         "documentation": {}
     },
@@ -695,7 +792,7 @@
         "kind": 6,
         "importPath": "compras.models",
         "description": "compras.models",
-        "peekOfCode": "class Compra_Producto(models.Model):\n    compra_id = models.ForeignKey(Compra, on_delete=models.CASCADE, related_name='compra_productos')\n    producto_id = models.ForeignKey('inventario.producto', on_delete=models.CASCADE, related_name='compra_productos')\n    cantidad = models.IntegerField()\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        #return self.compra_id # Esto devuelve el objeto Compra, no una cadena\n        return f\"Compra: {self.compra_id} | Producto: {self.producto_id} | Cantidad: {self.cantidad}\"",
+        "peekOfCode": "class Compra_Producto(models.Model):\n    compra_id = models.ForeignKey(Compra, on_delete=models.CASCADE, related_name='compra_productos')\n    producto_id = models.ForeignKey('inventario.producto', on_delete=models.CASCADE, related_name='compra_productos')\n    cantidad = models.IntegerField()\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        return str(self.compra_id) if self.compra_id is not None else \"Sin compra\"\n#-----------------------------------------------------------------------------------------------------------------------",
         "detail": "compras.models",
         "documentation": {}
     },
@@ -704,8 +801,17 @@
         "kind": 5,
         "importPath": "compras.models",
         "description": "compras.models",
-        "peekOfCode": "User = get_user_model()  # para hacer referencia a un tipo de usuario(cliente o proveedor) que se ha creado en el sistema\n# Clase Producto\nclass Compra(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='compras')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='compras')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)",
+        "peekOfCode": "User = get_user_model()  # para hacer referencia a un tipo de usuario(cliente o proveedor) que se ha creado en el sistema\n#-----------------------------------------------------------------------------------------------------------------------\n# Clase Producto\nclass Compra(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='compras')\n    #proveedor = models.ForeignKey('inventario.Proveedor', on_delete=models.CASCADE)\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE, related_name='compras')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    #precio_venta = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)\n    cantidad = models.IntegerField()",
         "detail": "compras.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "compras.urls",
+        "description": "compras.urls",
+        "peekOfCode": "app_name = 'compras'\nurlpatterns = [\n    path('agregar/', views.agregar_compra, name='agregar_compra'),\n    path('ver/', views.ver_compras, name='ver_compras'),\n    path('editar/<int:compra_id>/', views.editar_compra, name='editar_compra'),\n    path('eliminar/<int:compra_id>/', views.eliminar_compra, name='eliminar_compra'),\n    path('seleccionar_editar/', views.seleccionar_editar_compra, name='seleccionar_editar_compra'),\n    path('seleccionar_eliminar/', views.seleccionar_eliminar_compra, name='seleccionar_eliminar_compra'),\n]",
+        "detail": "compras.urls",
         "documentation": {}
     },
     {
@@ -713,16 +819,61 @@
         "kind": 5,
         "importPath": "compras.urls",
         "description": "compras.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('agregar/', views.agregar_compra, name='agregar_compra'),\n    path('ver/', views.ver_compras, name='ver_compras'),\n    path('editar/<int:compra_id>/', views.editar_compra, name='editar_compra'),\n    path('eliminar/<int:compra_id>/', views.eliminar_compra, name='eliminar_compra'),\n    path('seleccionar_editar/', views.seleccionar_editar_compra, name='seleccionar_editar_compra'),\n    path('seleccionar_eliminar/', views.seleccionar_eliminar_compra, name='seleccionar_eliminar_compra'),\n]",
         "detail": "compras.urls",
         "documentation": {}
     },
     {
-        "label": "index",
+        "label": "agregar_compra",
         "kind": 2,
         "importPath": "compras.views",
         "description": "compras.views",
-        "peekOfCode": "def index(request):\n    # productos = Producto.objects.all()\n    return HttpResponse(\"esta es la view de compras y compras productos\")",
+        "peekOfCode": "def agregar_compra(request):\n    \"\"\"\n    :param request:\n    :return: '/compras/agregar/?exito=1'\n    \"\"\"\n    if request.method == 'POST': # Verifica si el método de la solicitud es POST\n        form = CompraForm(request.POST)\n        if form.is_valid():\n            compra = form.save(commit=False)  # No guarda aún en la base de datos\n            producto = compra.producto  # Obtiene el producto de la compra",
+        "detail": "compras.views",
+        "documentation": {}
+    },
+    {
+        "label": "ver_compras",
+        "kind": 2,
+        "importPath": "compras.views",
+        "description": "compras.views",
+        "peekOfCode": "def ver_compras(request):\n    \"\"\":param request:\n       :return: render con las compras ordenadas por fecha\n    \"\"\"\n    compras = Compra.objects.select_related('producto', 'cliente').order_by('-fecha')\n    return render(request, 'ver_compras.html', {'compras': compras})\n#-----------------------------------------------------------------------------------------------------------------------\ndef editar_compra(request, compra_id):\n    \"\"\":param request:\n       :param compra_id: ID de la compra a editar",
+        "detail": "compras.views",
+        "documentation": {}
+    },
+    {
+        "label": "editar_compra",
+        "kind": 2,
+        "importPath": "compras.views",
+        "description": "compras.views",
+        "peekOfCode": "def editar_compra(request, compra_id):\n    \"\"\":param request:\n       :param compra_id: ID de la compra a editar\n       :return: render con el formulario para editar la compra\n    \"\"\"\n    compra = get_object_or_404(Compra, id=compra_id)\n    # Aquí deberías tener un formulario para editar, ejemplo:\n    if request.method == 'POST':\n        # form = CompraForm(request.POST, instance=compra)\n        # if form.is_valid():",
+        "detail": "compras.views",
+        "documentation": {}
+    },
+    {
+        "label": "eliminar_compra",
+        "kind": 2,
+        "importPath": "compras.views",
+        "description": "compras.views",
+        "peekOfCode": "def eliminar_compra(request, compra_id):\n    \"\"\" :param request:\n        :param compra_id: ID de la compra a eliminar\n        :return: render con la confirmación de eliminación\n    \"\"\"\n    compra = get_object_or_404(Compra, id=compra_id)\n    if request.method == 'POST':\n        compra.delete()\n        return redirect('compras:ver_compras')\n    return render(request, 'compras/eliminar_compra.html', {'compra': compra})",
+        "detail": "compras.views",
+        "documentation": {}
+    },
+    {
+        "label": "seleccionar_editar_compra",
+        "kind": 2,
+        "importPath": "compras.views",
+        "description": "compras.views",
+        "peekOfCode": "def seleccionar_editar_compra(request):\n    \"\"\" :param request:\n        :return: render con las compras para seleccionar y editar\n    \"\"\"\n    compras = Compra.objects.all() # Obtiene todas las compras\n    buscar = request.GET.get(\"buscar\") # Obtiene el parámetro de búsqueda de la URL\n    if buscar: # Si hay un término de búsqueda\n        compras = compras.filter( # Filtra las compras por el nombre del producto, nombre del cliente o ID\n            producto__nombre__icontains=buscar\n        ) | compras.filter(",
+        "detail": "compras.views",
+        "documentation": {}
+    },
+    {
+        "label": "seleccionar_eliminar_compra",
+        "kind": 2,
+        "importPath": "compras.views",
+        "description": "compras.views",
+        "peekOfCode": "def seleccionar_eliminar_compra(request):\n    \"\"\" :param request:\n        :return: render con las compras para seleccionar y eliminar\n    \"\"\"\n    compras = Compra.objects.all()\n    buscar = request.GET.get(\"buscar\")\n    if buscar:\n        compras = compras.filter(\n            producto__nombre__icontains=buscar\n        ) | compras.filter(",
         "detail": "compras.views",
         "documentation": {}
     },
@@ -767,16 +918,34 @@
         "kind": 5,
         "importPath": "estadisticas.urls",
         "description": "estadisticas.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n]",
+        "peekOfCode": "urlpatterns = [\n    #path('', views.home, name='home'),\n    path('dashboard/', views.dashboard, name='dashboard'),\n]",
         "detail": "estadisticas.urls",
         "documentation": {}
     },
     {
-        "label": "index",
+        "label": "home",
         "kind": 2,
         "importPath": "estadisticas.views",
         "description": "estadisticas.views",
-        "peekOfCode": "def index(request):\n    # productos = Producto.objects.all()\n    return HttpResponse(\"esta es la view de Estadisticas\")",
+        "peekOfCode": "def home(request):\n    # Esta view es para la PÁGINA PRINCIPAL (\"/\")\n    return render(request, \"index.html\")\ndef dashboard(request):\n    analisis = request.GET.get('analisis')\n    periodo = request.GET.get('periodo')\n    fecha_inicio = request.GET.get('fecha_inicio')\n    fecha_fin = request.GET.get('fecha_fin')\n    context = {\n        \"analisis\": analisis,",
+        "detail": "estadisticas.views",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 2,
+        "importPath": "estadisticas.views",
+        "description": "estadisticas.views",
+        "peekOfCode": "def dashboard(request):\n    analisis = request.GET.get('analisis')\n    periodo = request.GET.get('periodo')\n    fecha_inicio = request.GET.get('fecha_inicio')\n    fecha_fin = request.GET.get('fecha_fin')\n    context = {\n        \"analisis\": analisis,\n        \"periodo\": periodo,\n        \"fecha_inicio\": fecha_inicio,\n        \"fecha_fin\": fecha_fin,",
+        "detail": "estadisticas.views",
+        "documentation": {}
+    },
+    {
+        "label": "#comparativa_data",
+        "kind": 5,
+        "importPath": "estadisticas.views",
+        "description": "estadisticas.views",
+        "peekOfCode": "#comparativa_data = [\n#    {\"rango\": \"2025-08-01\", \"valor\": 1000},\n#    {\"rango\": \"2025-08-02\", \"valor\": 2000},\n#    {\"rango\": \"2025-08-03\", \"valor\": 1500},\n#]\ndef home(request):\n    # Esta view es para la PÁGINA PRINCIPAL (\"/\")\n    return render(request, \"index.html\")\ndef dashboard(request):\n    analisis = request.GET.get('analisis')",
         "detail": "estadisticas.views",
         "documentation": {}
     },
@@ -839,7 +1008,7 @@
         "kind": 6,
         "importPath": "inventario.admin",
         "description": "inventario.admin",
-        "peekOfCode": "class ProductoAdmin(admin.ModelAdmin):\n    readonly_fields = ('stock_minimo',)\n    list_display = ('nombre', 'precio', 'stock', 'proveedor', 'categoria', 'creado_en')\n    #bloqueo de campos para que no se puedan editar (stock_minimo es readonly siempre)\n    def get_readonly_fields(self, request, obj=None):\n        # stock_minimo es readonly siempre\n        return self.readonly_fields\nclass CategoriaAdmin(admin.ModelAdmin):\n    list_display = ('nombre',)\nclass ProveedorAdmin(admin.ModelAdmin):",
+        "peekOfCode": "class ProductoAdmin(admin.ModelAdmin):\n    readonly_fields = ('stock_minimo',)\n    list_display = ('nombre', 'precio_compra', 'stock', 'proveedor', 'categoria','ganancia', 'creado_en')\n    #bloqueo de campos para que no se puedan editar (stock_minimo es readonly siempre)\n    def get_readonly_fields(self, request, obj=None):\n        # stock_minimo es readonly siempre\n        return self.readonly_fields\n    def precio_venta_display(self, obj): #Si quieres mostrar el precio de venta calculado:\n        return obj.precio_compra * (1 + obj.ganancia / 100)\n    precio_venta_display.short_description = 'Precio de Venta'",
         "detail": "inventario.admin",
         "documentation": {}
     },
@@ -875,7 +1044,7 @@
         "kind": 6,
         "importPath": "inventario.forms",
         "description": "inventario.forms",
-        "peekOfCode": "class ProductoForm(forms.ModelForm): #Hereda de forms.ModelForm, lo que significa que es un formulario basado en un modelo (en este caso, Producto).\n    class Meta:\n        model = Producto #Le dice al formulario que se base en el modelo Producto.\n        fields = '__all__'  # Usará todos los campos de Producto\n        #fields = ['nombre', 'categoria', 'precio', 'stock'] se puede cambiar all por esto\n        widgets = { # Define los widgets para los campos del formulario\n            'stock_minimo': forms.NumberInput(attrs={'readonly': 'readonly'}),}\n#El formulario de Proveedores\nclass ProveedorForm(forms.ModelForm):\n    class Meta:",
+        "peekOfCode": "class ProductoForm(forms.ModelForm):\n    \"\"\" :param forms.ModelForm:\n        :return: Un formulario para crear o editar productos.\n    \"\"\"\n    #Hereda de forms.ModelForm, lo que significa que es un formulario basado en un modelo (en este caso, Producto).\n    class Meta:\n        model = Producto #Le dice al formulario que se base en el modelo Producto.\n        fields = '__all__'  # Usará todos los campos de Producto\n        #fields = ['nombre', 'categoria', 'precio', 'stock'] se puede cambiar all por esto\n        widgets = { # Define los widgets para los campos del formulario",
         "detail": "inventario.forms",
         "documentation": {}
     },
@@ -884,7 +1053,7 @@
         "kind": 6,
         "importPath": "inventario.forms",
         "description": "inventario.forms",
-        "peekOfCode": "class ProveedorForm(forms.ModelForm):\n    class Meta:\n        model = Proveedor\n        fields = '__all__'",
+        "peekOfCode": "class ProveedorForm(forms.ModelForm):\n    \"\"\" :param forms.ModelForm:\n        :return: Un formulario para crear o editar proveedores.\n    \"\"\"\n    class Meta:\n        model = Proveedor\n        fields = '__all__'\n#-----------------------------------------------------------------------------------------------------------------------",
         "detail": "inventario.forms",
         "documentation": {}
     },
@@ -893,7 +1062,7 @@
         "kind": 6,
         "importPath": "inventario.models",
         "description": "inventario.models",
-        "peekOfCode": "class Categoria(models.Model):\n    nombre = models.CharField(max_length=100)\n    def __str__(self):\n        return self.nombre\n# Clase Producto\nclass Producto(models.Model):\n    nombre = models.CharField(max_length=150)\n    descripcion = models.TextField(blank=True)\n    precio = models.DecimalField(max_digits=10, decimal_places=2)\n    stock = models.IntegerField()",
+        "peekOfCode": "class Categoria(models.Model):\n    nombre = models.CharField(max_length=100)\n    def __str__(self):\n        return self.nombre\n#-----------------------------------------------------------------------------------------------------------------------\n# Clase Producto\nclass Producto(models.Model):\n    nombre = models.CharField(max_length=150) #CAHRFIELD PARA TEXTOS MAS CORTOS, NECESITA MAX_LENGTH Y TEXTFIELD PARA TEXTOS MAS LARGOS NO NECESITA MAX_LENGTH\n    descripcion = models.TextField(blank=True)\n    precio_compra = models.DecimalField(max_digits=10, decimal_places=2)",
         "detail": "inventario.models",
         "documentation": {}
     },
@@ -902,7 +1071,7 @@
         "kind": 6,
         "importPath": "inventario.models",
         "description": "inventario.models",
-        "peekOfCode": "class Producto(models.Model):\n    nombre = models.CharField(max_length=150)\n    descripcion = models.TextField(blank=True)\n    precio = models.DecimalField(max_digits=10, decimal_places=2)\n    stock = models.IntegerField()\n    stock_minimo = models.IntegerField(blank=True, null=True)\n    proveedor = models.ForeignKey('inventario.Proveedor', on_delete=models.CASCADE, related_name='productos')\n    categoria = models.ForeignKey('Categoria', on_delete=models.CASCADE, related_name='productos')\n    creado_en = models.DateTimeField(default=timezone.now)\n    def save(self, *args, **kwargs):",
+        "peekOfCode": "class Producto(models.Model):\n    nombre = models.CharField(max_length=150) #CAHRFIELD PARA TEXTOS MAS CORTOS, NECESITA MAX_LENGTH Y TEXTFIELD PARA TEXTOS MAS LARGOS NO NECESITA MAX_LENGTH\n    descripcion = models.TextField(blank=True)\n    precio_compra = models.DecimalField(max_digits=10, decimal_places=2)\n    stock = models.IntegerField()\n    stock_minimo = models.IntegerField(blank=True, null=True)\n    proveedor = models.ForeignKey('inventario.Proveedor', on_delete=models.CASCADE, related_name='productos')\n    categoria = models.ForeignKey('Categoria', on_delete=models.CASCADE, related_name='productos')\n    ganancia = models.DecimalField(\n        max_digits=5,",
         "detail": "inventario.models",
         "documentation": {}
     },
@@ -920,7 +1089,7 @@
         "kind": 5,
         "importPath": "inventario.urls",
         "description": "inventario.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('', views.inicio, name='inicio'),\n    path('inventario/', views.inventario, name='inventario'),\n    # PRODUCTOS\n    path('producto/agregar/', views.agregar_producto, name='agregar_producto'),\n    path('producto/seleccionar_editar/', views.seleccionar_editar_producto, name='seleccionar_editar_producto'),\n    path('producto/editar/<int:pk>/', views.editar_producto, name='editar_producto'),\n    path('productos/seleccionar_eliminar/', views.seleccionar_eliminar_producto, name='seleccionar_eliminar_producto'),\n    path('producto/eliminar/<int:producto_id>/', views.eliminar_producto, name='eliminar_producto'),",
+        "peekOfCode": "urlpatterns = [\n    #path('', views.index, name='index'),\n    #path('', views.inicio, name='inicio'),\n    path('inventario/', views.inventario, name='inventario'),\n    # PRODUCTOS\n    path('agregar_producto/', views.agregar_producto, name='agregar_producto'), #para poder agreasr producto desde compra\n    path('producto/agregar/', views.agregar_producto, name='agregar_producto'),\n    path('producto/seleccionar_editar/', views.seleccionar_editar_producto, name='seleccionar_editar_producto'),\n    path('producto/editar/<int:pk>/', views.editar_producto, name='editar_producto'),\n    path('productos/seleccionar_eliminar/', views.seleccionar_eliminar_producto, name='seleccionar_eliminar_producto'),",
         "detail": "inventario.urls",
         "documentation": {}
     },
@@ -929,7 +1098,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def index(request):\n    productos = Producto.objects.all()\n    # productos = Producto.objects.values()  # Esto devuelve una lista de diccionarios\n    # productos = Producto.objects.all()\n    return render(request, \"productos.html\", {\"productos\": productos})\n    # return HttpResponse(\"esta es la view de productos y proveedores\")\ndef inventario(request):\n    opcion = request.GET.get(\"tabla\", \"\")  # \"productos\" o \"proveedores\"\n    productos = Producto.objects.all() if opcion == \"productos\" else None\n    proveedores = Proveedor.objects.all() if opcion == \"proveedores\" else None",
+        "peekOfCode": "def index(request):\n    \"\"\" :param request:\n        :return: render con la lista de productos\n    \"\"\"\n    productos = Producto.objects.all()\n    # productos = Producto.objects.values()  # Esto devuelve una lista de diccionarios\n    # productos = Producto.objects.all()\n    return render(request, \"productos.html\", {\"productos\": productos})\n    # return HttpResponse(\"esta es la view de productos y proveedores\")\n#-----------------------------------------------------------------------------------------------------------------------",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -938,7 +1107,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def inventario(request):\n    opcion = request.GET.get(\"tabla\", \"\")  # \"productos\" o \"proveedores\"\n    productos = Producto.objects.all() if opcion == \"productos\" else None\n    proveedores = Proveedor.objects.all() if opcion == \"proveedores\" else None\n    productos_alerta = []\n    if productos:\n        for p in productos:\n            # Calcula el porcentaje del stock respecto al mínimo y lo añade como atributo\n            if p.stock_minimo > 0:\n                porcentaje_stock = (p.stock / p.stock_minimo) * 100",
+        "peekOfCode": "def inventario(request):\n    \"\"\" :param request:\n        :return: render con la lista de productos y proveedores, y alerta si el stock está al 90% o menos del stock mínimo\n    \"\"\"\n    opcion = request.GET.get(\"tabla\", \"\")  # \"productos\" o \"proveedores\"\n    productos = Producto.objects.all() if opcion == \"productos\" else None\n    proveedores = Proveedor.objects.all() if opcion == \"proveedores\" else None\n    productos_alerta = []\n    if productos:\n        for p in productos:",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -947,7 +1116,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def agregar_producto(request):\n    if request.method == 'POST':\n        form = ProductoForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('inventario')  # Vuelve a la página inventario\n    else:\n        form = ProductoForm()\n    return render(request, 'agregar_producto.html', {'form': form})\n\"\"\" def editar_producto(request, producto_id):",
+        "peekOfCode": "def agregar_producto(request):\n    if request.method == 'POST':\n        form = ProductoForm(request.POST)\n        if form.is_valid():\n            form.save()\n            messages.success(request, '¡Producto agregado exitosamente! ¿Deseas agregar otro producto?')\n            next_url = request.GET.get('next')\n            if next_url:\n                return redirect(next_url)\n            return redirect('agregar_producto')  # Redirige a sí misma para limpiar el form",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -956,7 +1125,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def seleccionar_editar_producto(request):\n    productos = Producto.objects.all()\n    return render(request, 'seleccionar_editar_producto.html', {'productos': productos})\ndef editar_producto(request, pk):\n    producto = get_object_or_404(Producto, pk=pk)\n    if request.method == 'POST':\n        form = ProductoForm(request.POST, instance=producto)\n        if 'recalcular_stock_minimo' in request.POST:\n            # Si el usuario presionó el botón de recalcular\n            if form.is_valid():",
+        "peekOfCode": "def seleccionar_editar_producto(request):\n    \"\"\" :param request:\n        :return: render con la lista de productos para seleccionar y editar\n    \"\"\"\n    productos = Producto.objects.all()\n    return render(request, 'seleccionar_editar_producto.html', {'productos': productos})\n#-----------------------------------------------------------------------------------------------------------------------\ndef editar_producto(request, pk):\n    \"\"\" :param request:\n        :param pk: ID del producto a editar",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -965,7 +1134,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def editar_producto(request, pk):\n    producto = get_object_or_404(Producto, pk=pk)\n    if request.method == 'POST':\n        form = ProductoForm(request.POST, instance=producto)\n        if 'recalcular_stock_minimo' in request.POST:\n            # Si el usuario presionó el botón de recalcular\n            if form.is_valid():\n                producto = form.save(commit=False)\n                producto.stock_minimo = int(producto.stock * 0.9)\n                producto.save()",
+        "peekOfCode": "def editar_producto(request, pk):\n    \"\"\" :param request:\n        :param pk: ID del producto a editar\n        :return: render con el formulario para editar el producto\n    \"\"\"\n    producto = get_object_or_404(Producto, pk=pk)\n    if request.method == 'POST':\n        form = ProductoForm(request.POST, instance=producto)\n        if 'recalcular_stock_minimo' in request.POST:\n            # Si el usuario presionó el botón de recalcular",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -974,7 +1143,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def eliminar_producto(request, id):\n    producto = get_object_or_404(Producto, pk=id)\n    if request.method == 'POST':\n        producto.delete()\n        return redirect('seleccionar_eliminar_producto')\n    return render(request, 'confirmar_eliminar_producto.html', {'producto': producto})\ndef seleccionar_eliminar_producto(request):\n    buscar = request.GET.get('buscar', '')\n    productos = Producto.objects.filter(nombre__icontains=buscar) if buscar else Producto.objects.all()\n    return render(request, 'seleccionar_eliminar_producto.html', {'productos': productos})",
+        "peekOfCode": "def eliminar_producto(request, id):\n    \"\"\" :param request:\n        :param id: ID del producto a eliminar\n        :return: render con la confirmación de eliminación del producto\n    \"\"\"\n    producto = get_object_or_404(Producto, pk=id)\n    if request.method == 'POST':\n        producto.delete()\n        return redirect('seleccionar_eliminar_producto')\n    return render(request, 'confirmar_eliminar_producto.html', {'producto': producto})",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -983,7 +1152,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def seleccionar_eliminar_producto(request):\n    buscar = request.GET.get('buscar', '')\n    productos = Producto.objects.filter(nombre__icontains=buscar) if buscar else Producto.objects.all()\n    return render(request, 'seleccionar_eliminar_producto.html', {'productos': productos})\ndef inicio(request):  # para el boton de la pantalla de inicio\n    return render(request, 'inicio.html')\ndef agregar_proveedor(request):\n    if request.method == 'POST':\n        form = ProveedorForm(request.POST)\n        if form.is_valid():",
+        "peekOfCode": "def seleccionar_eliminar_producto(request):\n    \"\"\" :param request:\n        :return: render con la lista de productos para seleccionar y eliminar\n    \"\"\"\n    buscar = request.GET.get('buscar', '')\n    productos = Producto.objects.filter(nombre__icontains=buscar) if buscar else Producto.objects.all()\n    return render(request, 'seleccionar_eliminar_producto.html', {'productos': productos})\n#-----------------------------------------------------------------------------------------------------------------------\ndef inicio(request):\n    # para el boton de la pantalla de inicio",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -992,7 +1161,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def inicio(request):  # para el boton de la pantalla de inicio\n    return render(request, 'inicio.html')\ndef agregar_proveedor(request):\n    if request.method == 'POST':\n        form = ProveedorForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('inventario')  # Vuelve a la página inventario\n    else:\n        form = ProveedorForm()",
+        "peekOfCode": "def inicio(request):\n    # para el boton de la pantalla de inicio\n    \"\"\" :param request:\"\"\"\n    return render(request, 'inicio.html')\n#-----------------------------------------------------------------------------------------------------------------------\ndef agregar_proveedor(request):\n    \"\"\" :param request:\n        :return: render con el formulario para agregar un proveedor\n    \"\"\"\n    if request.method == 'POST':",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -1001,7 +1170,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def agregar_proveedor(request):\n    if request.method == 'POST':\n        form = ProveedorForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('inventario')  # Vuelve a la página inventario\n    else:\n        form = ProveedorForm()\n    return render(request, 'agregar_proveedor.html', {'form': form})\ndef editar_proveedor(request, proveedor_id):",
+        "peekOfCode": "def agregar_proveedor(request):\n    \"\"\" :param request:\n        :return: render con el formulario para agregar un proveedor\n    \"\"\"\n    if request.method == 'POST':\n        form = ProveedorForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('inventario')  # Vuelve a la página inventario\n    else:",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -1010,7 +1179,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def editar_proveedor(request, proveedor_id):\n    proveedor = get_object_or_404(Proveedor, id=proveedor_id)\n    if request.method == 'POST':\n        form = ProveedorForm(request.POST, instance=proveedor)\n        if form.is_valid():\n            form.save()\n            return redirect('inventario')\n    else:\n        form = ProveedorForm(instance=proveedor)\n    return render(request, 'editar_proveedor.html', {'form': form})",
+        "peekOfCode": "def editar_proveedor(request, proveedor_id):\n    \"\"\" :param request:\n        :param proveedor_id: ID del proveedor a editar\n        :return: render con el formulario para editar el proveedor\n    \"\"\"\n    proveedor = get_object_or_404(Proveedor, id=proveedor_id)\n    if request.method == 'POST':\n        form = ProveedorForm(request.POST, instance=proveedor)\n        if form.is_valid():\n            form.save()",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -1019,7 +1188,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def seleccionar_editar_proveedor(request):\n    proveedores = Proveedor.objects.all()\n    buscar = request.GET.get('buscar')\n    if buscar:\n        proveedores = proveedores.filter(nombre__icontains=buscar)\n    return render(request, 'seleccionar_editar_proveedor.html', {'proveedores': proveedores})\ndef eliminar_proveedor(request, proveedor_id):\n    proveedor = get_object_or_404(Proveedor, id=proveedor_id)\n    if request.method == 'POST':\n        proveedor.delete()",
+        "peekOfCode": "def seleccionar_editar_proveedor(request):\n    \"\"\" :param request:\n        :return: render con la lista de proveedores para seleccionar y editar\n    \"\"\"\n    proveedores = Proveedor.objects.all()\n    buscar = request.GET.get('buscar')\n    if buscar:\n        proveedores = proveedores.filter(nombre__icontains=buscar)\n    return render(request, 'seleccionar_editar_proveedor.html', {'proveedores': proveedores})\n#-----------------------------------------------------------------------------------------------------------------------",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -1028,7 +1197,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def eliminar_proveedor(request, proveedor_id):\n    proveedor = get_object_or_404(Proveedor, id=proveedor_id)\n    if request.method == 'POST':\n        proveedor.delete()\n        return redirect('inventario')\n    return render(request, 'eliminar_proveedor.html', {'proveedor': proveedor})\ndef seleccionar_eliminar_proveedor(request):\n    proveedores = Proveedor.objects.all()\n    buscar = request.GET.get('buscar', '')\n    if buscar:",
+        "peekOfCode": "def eliminar_proveedor(request, proveedor_id):\n    \"\"\" :param request:\n        :param proveedor_id: ID del proveedor a eliminar\n        :return: render con la confirmación de eliminación del proveedor\n    \"\"\"\n    proveedor = get_object_or_404(Proveedor, id=proveedor_id)\n    if request.method == 'POST':\n        proveedor.delete()\n        return redirect('inventario')\n    return render(request, 'eliminar_proveedor.html', {'proveedor': proveedor})",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -1037,7 +1206,7 @@
         "kind": 2,
         "importPath": "inventario.views",
         "description": "inventario.views",
-        "peekOfCode": "def seleccionar_eliminar_proveedor(request):\n    proveedores = Proveedor.objects.all()\n    buscar = request.GET.get('buscar', '')\n    if buscar:\n        proveedores = proveedores.filter(nombre__icontains=buscar)\n    return render(request, 'seleccionar_eliminar_proveedor.html', {'proveedores': proveedores})\n#def lista_eliminar_proveedor(request): # creada para eliminar un proveedor de una lista\n#    proveedores = Proveedor.objects.all()\n#    return render(request, \"lista_eliminar_proveedor.html\", {\"proveedores\": proveedores})",
+        "peekOfCode": "def seleccionar_eliminar_proveedor(request):\n    \"\"\" :param request:\n        :return: render con la lista de proveedores para seleccionar y eliminar\n    \"\"\"\n    proveedores = Proveedor.objects.all()\n    buscar = request.GET.get('buscar', '')\n    if buscar:\n        proveedores = proveedores.filter(nombre__icontains=buscar)\n    return render(request, 'seleccionar_eliminar_proveedor.html', {'proveedores': proveedores})\n#-----------------------------------------------------------------------------------------------------------------------",
         "detail": "inventario.views",
         "documentation": {}
     },
@@ -1226,7 +1395,7 @@
         "kind": 5,
         "importPath": "suministros.urls",
         "description": "suministros.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('inicio.urls')),  # La raíz del sitio apunta a la app inicio\n    path('', include('inventario.urls')),  # Esto incluye las URLs de la app # 👈 Home en raíz\n    path(\"compras/\", include(\"compras.urls\")),\n    path(\"estadisticas/\", include(\"estadisticas.urls\")),\n    path(\"inventario/\", include(\"inventario.urls\")),\n    path(\"ventas/\", include(\"ventas.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('inicio.urls')),  # La raíz del sitio apunta a la app inicio\n    # path('', include('inventario.urls')),  # Esto incluye las URLs de la app # 👈 Home en raíz\n    # path(\"compras/\", include(\"compras.urls\")),\n    # path(\"estadisticas/\", include(\"estadisticas.urls\")),\n    path('estadisticas/', include('estadisticas.urls')),\n    path(\"inventario/\", include(\"inventario.urls\")),\n    path(\"ventas/\", include(\"ventas.urls\")),\n    path('compras/', include('compras.urls')),  # Esto habilita /compras/agregar/",
         "detail": "suministros.urls",
         "documentation": {}
     },
@@ -1276,11 +1445,20 @@
         "documentation": {}
     },
     {
+        "label": "VentaForm",
+        "kind": 6,
+        "importPath": "ventas.forms",
+        "description": "ventas.forms",
+        "peekOfCode": "class VentaForm(forms.ModelForm): #Creas una clase CompraForm que hereda de forms.ModelForm.\n    class Meta:  #La clase interna Meta sirve para darle a Django instrucciones sobre cómo construir el formulario.\n        model = Venta #Le dices a Django que este formulario se basa en el modelo Compra.\n        fields = ['producto', 'cliente', 'precio_unitario', 'descuento',  'cantidad', 'total', 'fecha', 'creado_en']\n        widgets = {\n            'precio_unitario': forms.TextInput(attrs={'readonly': 'readonly'}),\n            'total': forms.TextInput(attrs={'readonly': 'readonly'}),\n        }\n#-----------------------------------------------------------------------------------------------------------------------",
+        "detail": "ventas.forms",
+        "documentation": {}
+    },
+    {
         "label": "Venta",
         "kind": 6,
         "importPath": "ventas.models",
         "description": "ventas.models",
-        "peekOfCode": "class Venta(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='ventas')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='ventas')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        return self.producto.nombre",
+        "peekOfCode": "class Venta(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='ventas')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='ventas')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    descuento = models.DecimalField(max_digits=5, decimal_places=2, default=0.00) #agregado recientemente\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)",
         "detail": "ventas.models",
         "documentation": {}
     },
@@ -1289,7 +1467,7 @@
         "kind": 6,
         "importPath": "ventas.models",
         "description": "ventas.models",
-        "peekOfCode": "class Venta_Producto(models.Model):\n    venta_id = models.ForeignKey(Venta, on_delete=models.CASCADE, related_name='venta_productos')\n    producto_id = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='venta_productos')\n    cantidad = models.IntegerField()\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        return self.venta_id",
+        "peekOfCode": "class Venta_Producto(models.Model):\n    venta_id = models.ForeignKey(Venta, on_delete=models.CASCADE, related_name='venta_productos')\n    producto_id = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='venta_productos')\n    descuento = models.DecimalField(max_digits=5, decimal_places=2, default=0.00)\n    cantidad = models.IntegerField()\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)\n    def __str__(self):\n        return f\"{self.producto_id} x {self.cantidad} en venta #{self.venta_id.pk}\"",
         "detail": "ventas.models",
         "documentation": {}
     },
@@ -1298,7 +1476,7 @@
         "kind": 5,
         "importPath": "ventas.models",
         "description": "ventas.models",
-        "peekOfCode": "User = get_user_model()  # para hacer referencia a un tipo de usuario(cliente o proveedor) que se ha creado en el sistema\n# Clase Producto\nclass Venta(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='ventas')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='ventas')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    cantidad = models.IntegerField()\n    fecha = models.DateField()\n    total = models.DecimalField(max_digits=10, decimal_places=2)\n    creado_en = models.DateTimeField(default=timezone.now)",
+        "peekOfCode": "User = get_user_model()  # para hacer referencia a un tipo de usuario(cliente o proveedor) que se ha creado en el sistema\n# Clase Producto\nclass Venta(models.Model):\n    producto = models.ForeignKey('inventario.Producto', on_delete=models.CASCADE, related_name='ventas')\n    cliente = models.ForeignKey(User, on_delete=models.CASCADE,\n                                related_name='ventas')  # aquí uso el modelo de usuario que se ha creado en el sistema\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    descuento = models.DecimalField(max_digits=5, decimal_places=2, default=0.00) #agregado recientemente\n    cantidad = models.IntegerField()\n    fecha = models.DateField()",
         "detail": "ventas.models",
         "documentation": {}
     },

@@ -40,7 +40,7 @@
             display: flex;
             align-items: center;
             box-shadow: var(--box-shadow);
-            padding: 0 5px 0 2px; /* 10px más a la izquierda */
+            padding: 0 5px 0 2px;
         }
         .topbar-logo {
             display: flex; align-items: center; gap: 11px;
@@ -74,7 +74,7 @@
             align-items: center;
             gap: 10px;
             font-size: 1rem;
-            margin-left: 0px; /* más cerca del logo */
+            margin-left: 0px;
             margin-right: 0;
         }
         .topbar-links a,
@@ -212,7 +212,7 @@
         .menubar .menu-right { margin-left: auto; }
         .sidebar { display: none; }
         .container-app {
-            margin-top: 100px; /* 56 + 44 */
+            margin-top: 100px;
             margin-left: 0;
             min-height: calc(100vh - 100px);
             background: var(--content-bg);
@@ -331,15 +331,19 @@
             <li>
                 <a href="#"><i class="fas fa-cash-register"></i> Compras <i class="fa fa-caret-down"></i></a>
                 <div class="submenu">
-                    <a href="/compras/hacer/"><i class="fa fa-plus"></i> Hacer compra</a>
-                    <a href="/compras/dia/"><i class="fa fa-calendar-day"></i> Ver compras del día</a>
+                    <a href="{% url 'compras:agregar_compra' %}"><i class="fa fa-plus"></i> Hacer compra</a>
+                    <a href="{% url 'compras:seleccionar_editar_compra' %}"><i class="fa fa-edit"></i> Editar compra</a>
+                    <a href="{% url 'compras:seleccionar_eliminar_compra' %}"><i class="fa fa-trash"></i> Eliminar compra</a>
+                    <a href="{% url 'compras:ver_compras' %}"><i class="fa fa-calendar-day"></i> Ver compras</a>
                 </div>
             </li>
             <li>
                 <a href="#"><i class="fas fa-cash-register"></i> Ventas <i class="fa fa-caret-down"></i></a>
                 <div class="submenu">
-                    <a href="/ventas/hacer/"><i class="fa fa-plus"></i> Hacer venta</a>
-                    <a href="/ventas/dia/"><i class="fa fa-calendar-day"></i> Ver ventas del día</a>
+                    <a href="{% url 'ventas:agregar_venta' %}"><i class="fa fa-plus"></i> Hacer venta</a>
+                    <a href="{% url 'ventas:seleccionar_editar_venta' %}"><i class="fa fa-edit"></i> Editar venta</a>
+                    <a href="{% url 'ventas:seleccionar_eliminar_venta' %}"><i class="fa fa-trash"></i> Eliminar venta</a>
+                    <a href="{% url 'ventas:ver_ventas' %}"><i class="fa fa-calendar-day"></i> Ver ventas</a>
                 </div>
             </li>
             <li>
@@ -362,14 +366,7 @@
                 </div>
             </li>
             <li>
-                <a href="#"><i class="fas fa-chart-bar"></i> Estadísticas <i class="fa fa-caret-down"></i></a>
-                <div class="submenu">
-                    <a href="/estadisticas/dashboard/"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
-                    <a href="/estadisticas/ventas-dia/"><i class="fa fa-calendar-day"></i> Ventas del día</a>
-                    <a href="/estadisticas/ventas-mes/"><i class="fa fa-calendar-alt"></i> Ventas del mes</a>
-                    <a href="/estadisticas/ganancias/"><i class="fa fa-dollar-sign"></i> Ganancias</a>
-                    <a href="/estadisticas/graficas/"><i class="fa fa-chart-line"></i> Gráficas</a>
-                </div>
+                <a href="{% url 'dashboard' %}"><i class="fas fa-chart-bar"></i> Dashboard</a>
             </li>
             <li>
                 <a href="/admin/"><i class="fas fa-user-shield"></i> Administración</a>
@@ -379,12 +376,20 @@
     </div>
     <div class="container-app">
         <main>
+            {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                        <div class="alert {{ message.tags }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
             {% block content %}
             {% endblock %}
         </main>
     </div>
     <footer>
-        <p style="color:var(--paragraph);">by Néstor Enríquez C.</p>
+        <p style="color:var(--paragraph);">by NenriquezC.</p>
     </footer>
+    {% block scripts %}{% endblock %}
 </body>
 </html>

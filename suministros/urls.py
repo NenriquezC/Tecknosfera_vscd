@@ -21,9 +21,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', include('inicio.urls')),  # La raíz del sitio apunta a la app inicio
-    path('', include('inventario.urls')),  # Esto incluye las URLs de la app # 👈 Home en raíz
-    path("compras/", include("compras.urls")),
-    path("estadisticas/", include("estadisticas.urls")),
+    # path('', include('inventario.urls')),  # Esto incluye las URLs de la app # 👈 Home en raíz
+    # path("compras/", include("compras.urls")),
+    # path("estadisticas/", include("estadisticas.urls")),
+    path('estadisticas/', include('estadisticas.urls')),
     path("inventario/", include("inventario.urls")),
     path("ventas/", include("ventas.urls")),
+    path('compras/', include('compras.urls')),  # Esto habilita /compras/agregar/
+
 ]

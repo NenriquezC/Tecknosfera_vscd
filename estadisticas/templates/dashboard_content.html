@@ -1,0 +1,261 @@
+{% if analisis == "ventas" %}
+<h2>Análisis de Ventas</h2>
+  <form id="ventas-form" method="get">
+    <input type="hidden" name="analisis" value="ventas">
+    <label>Ver por:</label>
+    <select name="periodo" id="periodo-select">
+      <option value="dia" {% if periodo == "dia" %}selected{% endif %}>Día</option>
+      <option value="mes" {% if periodo == "mes" %}selected{% endif %}>Mes</option>
+      <option value="anio" {% if periodo == "anio" %}selected{% endif %}>Año</option>
+      <option value="personalizado" {% if periodo == "personalizado" %}selected{% endif %}>Personalizado</option>
+    </select>
+    <span id="personalizado-fechas" style="display: {% if periodo == 'personalizado' %}inline{% else %}none{% endif %};">
+      <label>Desde:</label>
+      <input type="date" name="fecha_inicio" id="fecha-inicio" value="{{ fecha_inicio|default:'' }}">
+      <label>Hasta:</label>
+      <input type="date" name="fecha_fin" id="fecha-fin" value="{{ fecha_fin|default:'' }}">
+    </span>
+  </form>
+  <script>
+    document.getElementById('periodo-select').addEventListener('change', function() {
+      if (this.value !== 'personalizado') {
+        document.getElementById('ventas-form').submit();
+      } else {
+        document.getElementById('personalizado-fechas').style.display = 'inline';
+      }
+    });
+    var fechaInicio = document.getElementById('fecha-inicio');
+    var fechaFin = document.getElementById('fecha-fin');
+    if (fechaInicio && fechaFin) {
+      fechaInicio.addEventListener('change', function() {
+        if (fechaInicio.value && fechaFin.value) {
+          document.getElementById('ventas-form').submit();
+        }
+      });
+      fechaFin.addEventListener('change', function() {
+        if (fechaInicio.value && fechaFin.value) {
+          document.getElementById('ventas-form').submit();
+        }
+      });
+    }
+  </script>
+  {% if ventas_data %}
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Total Ventas</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for fila in ventas_data %}
+        <tr>
+          <td>{{ fila.fecha }}</td>
+          <td>{{ fila.total }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% elif analisis == "compras" %}
+  <h2>Análisis de Compras</h2>
+  <form id="compras-form" method="get">
+    <input type="hidden" name="analisis" value="compras">
+    <label>Ver por:</label>
+    <select name="periodo" id="periodo-compras">
+      <option value="dia" {% if periodo == "dia" %}selected{% endif %}>Día</option>
+      <option value="mes" {% if periodo == "mes" %}selected{% endif %}>Mes</option>
+      <option value="anio" {% if periodo == "anio" %}selected{% endif %}>Año</option>
+      <option value="personalizado" {% if periodo == "personalizado" %}selected{% endif %}>Personalizado</option>
+    </select>
+    <span id="personalizado-fechas-compras" style="display: {% if periodo == 'personalizado' %}inline{% else %}none{% endif %};">
+      <label>Desde:</label>
+      <input type="date" name="fecha_inicio" id="fecha-inicio-compras" value="{{ fecha_inicio|default:'' }}">
+      <label>Hasta:</label>
+      <input type="date" name="fecha_fin" id="fecha-fin-compras" value="{{ fecha_fin|default:'' }}">
+    </span>
+  </form>
+  <script>
+    document.getElementById('periodo-compras').addEventListener('change', function() {
+      if (this.value !== 'personalizado') {
+        document.getElementById('compras-form').submit();
+      } else {
+        document.getElementById('personalizado-fechas-compras').style.display = 'inline';
+      }
+    });
+    var fechaInicioC = document.getElementById('fecha-inicio-compras');
+    var fechaFinC = document.getElementById('fecha-fin-compras');
+    if (fechaInicioC && fechaFinC) {
+      fechaInicioC.addEventListener('change', function() {
+        if (fechaInicioC.value && fechaFinC.value) {
+          document.getElementById('compras-form').submit();
+        }
+      });
+      fechaFinC.addEventListener('change', function() {
+        if (fechaInicioC.value && fechaFinC.value) {
+          document.getElementById('compras-form').submit();
+        }
+      });
+    }
+  </script>
+  {% if compras_data %}
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Total Compras</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for fila in compras_data %}
+        <tr>
+          <td>{{ fila.fecha }}</td>
+          <td>{{ fila.total }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% elif analisis == "proveedores" %}
+  <h2>Análisis de Proveedores</h2>
+  <form id="proveedores-form" method="get">
+    <input type="hidden" name="analisis" value="proveedores">
+    <label for="metrica-proveedores">Ver:</label>
+    <select name="metrica" id="metrica-proveedores">
+      <option value="mas_activos" {% if metrica == "mas_activos" %}selected{% endif %}>Proveedores más activos en el periodo</option>
+      <option value="mas_venden" {% if metrica == "mas_venden" %}selected{% endif %}>Proveedores que más venden</option>
+      <option value="movimiento_inventario" {% if metrica == "movimiento_inventario" %}selected{% endif %}>Cantidad de movimiento de inventario</option>
+    </select>
+    <span id="fechas-proveedores" style="margin-left: 20px;">
+      <label>Desde:</label>
+      <input type="date" name="fecha_inicio" value="{{ fecha_inicio|default:'' }}">
+      <label>Hasta:</label>
+      <input type="date" name="fecha_fin" value="{{ fecha_fin|default:'' }}">
+    </span>
+  </form>
+  <script>
+    document.getElementById('metrica-proveedores').addEventListener('change', function() {
+      document.getElementById('proveedores-form').submit();
+    });
+    var fechas = document.querySelectorAll('#fechas-proveedores input[type="date"]');
+    fechas.forEach(function(input) {
+      input.addEventListener('change', function() {
+        let desde = fechas[0].value;
+        let hasta = fechas[1].value;
+        if (desde && hasta) document.getElementById('proveedores-form').submit();
+      });
+    });
+  </script>
+  {% if proveedores_data %}
+    <table>
+      <thead>
+        <tr>
+          <th>Proveedor</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for fila in proveedores_data %}
+        <tr>
+          <td>{{ fila.nombre }}</td>
+          <td>{{ fila.valor }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% elif analisis == "productos" %}
+  <h2>Análisis de Productos</h2>
+  <form id="productos-form" method="get">
+    <input type="hidden" name="analisis" value="productos">
+    <label for="metrica-productos">Ver:</label>
+    <select name="metrica" id="metrica-productos">
+      <option value="mas_vendido" {% if metrica == "mas_vendido" %}selected{% endif %}>Producto más vendido</option>
+      <option value="menos_vendido" {% if metrica == "menos_vendido" %}selected{% endif %}>Producto menos vendido</option>
+      <option value="sin_ventas" {% if metrica == "sin_ventas" %}selected{% endif %}>Producto que no se vende</option>
+    </select>
+    <span id="fechas-productos" style="margin-left: 20px;">
+      <label>Desde:</label>
+      <input type="date" name="fecha_inicio" value="{{ fecha_inicio|default:'' }}">
+      <label>Hasta:</label>
+      <input type="date" name="fecha_fin" value="{{ fecha_fin|default:'' }}">
+    </span>
+  </form>
+  <script>
+    document.getElementById('metrica-productos').addEventListener('change', function() {
+      document.getElementById('productos-form').submit();
+    });
+    var fechasP = document.querySelectorAll('#fechas-productos input[type="date"]');
+    fechasP.forEach(function(input) {
+      input.addEventListener('change', function() {
+        let desde = fechasP[0].value;
+        let hasta = fechasP[1].value;
+        if (desde && hasta) document.getElementById('productos-form').submit();
+      });
+    });
+  </script>
+  {% if productos_data %}
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for fila in productos_data %}
+        <tr>
+          <td>{{ fila.nombre }}</td>
+          <td>{{ fila.valor }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% elif analisis == "comparativa" %}
+  <h2>Comparativa de Ventas</h2>
+  <form id="comparativa-form" method="get">
+    <input type="hidden" name="analisis" value="comparativa">
+    <label>Periodo actual:</label>
+    <input type="month" name="periodo_actual" id="periodo-actual" value="{{ periodo_actual|default:'' }}">
+    <label>Periodo anterior:</label>
+    <input type="month" name="periodo_anterior" id="periodo-anterior" value="{{ periodo_anterior|default:'' }}">
+  </form>
+  <script>
+    var periodoActual = document.getElementById('periodo-actual');
+    var periodoAnterior = document.getElementById('periodo-anterior');
+    if (periodoActual && periodoAnterior) {
+      periodoActual.addEventListener('change', function() {
+        if (periodoActual.value && periodoAnterior.value) {
+          document.getElementById('comparativa-form').submit();
+        }
+      });
+      periodoAnterior.addEventListener('change', function() {
+        if (periodoActual.value && periodoAnterior.value) {
+          document.getElementById('comparativa-form').submit();
+        }
+      });
+    }
+  </script>
+  {% if comparativa_data %}
+    <table>
+      <thead>
+        <tr>
+          <th>Periodo</th>
+          <th>Total Ventas</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for fila in comparativa_data %}
+        <tr>
+          <td>{{ fila.periodo }}</td>
+          <td>{{ fila.total }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% else %}
+  <h2>Bienvenido al Dashboard</h2>
+  <p>esta es la maldita mierda que me esta molestando?</p>
+{% endif %}

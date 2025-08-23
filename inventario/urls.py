@@ -5,11 +5,12 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('', views.inicio, name='inicio'),
+    #path('', views.index, name='index'),
+    #path('', views.inicio, name='inicio'),
     path('inventario/', views.inventario, name='inventario'),
 
     # PRODUCTOS
+    path('agregar_producto/', views.agregar_producto, name='agregar_producto'), #para poder agreasr producto desde compra
     path('producto/agregar/', views.agregar_producto, name='agregar_producto'),
     path('producto/seleccionar_editar/', views.seleccionar_editar_producto, name='seleccionar_editar_producto'),
     path('producto/editar/<int:pk>/', views.editar_producto, name='editar_producto'),
